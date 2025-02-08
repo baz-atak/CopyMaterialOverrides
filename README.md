@@ -1,5 +1,5 @@
-# CopyMaterialOverrides
- Set Material Overrides from other meshes
+# Copy Material Overrides
+ Set Surface Material Overrides on mesh instances from materials on other mesh instances.
 
  After starting the Copy Material Overrides addon you'll get 3 buttons added to the top of the Godot editor.
  - The CMO button reopens / refocuses the Copy Material Overrides window.
