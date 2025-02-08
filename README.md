@@ -1,7 +1,15 @@
 # Copy Material Overrides
- Set Surface Material Overrides on mesh instances from materials on other mesh instances.
+ This is an addon for the Godot game engine / editor (written for version 4.3)
 
- After starting the Copy Material Overrides addon you'll get 3 buttons added to the top of the Godot editor.
+ This addon is for setting Surface Material Overrides on mesh instances from materials on other mesh instances.
+ On 3D meshes you can (normally) define upto 16 material slots and assign different surfaces to different slots.
+ This tool is therefore primarily for setting using these slots for setting generic materials onto meshes (e.g. tiled brick, wood, concrete etc materials)
+
+ Copy the copy_material_overrides folder into your projects res://addons folder (create it if needed).
+ Enable the addon by going into the Project menu's Project Settings option, selecting the Plugins tab and ticking this addons enabled box.
+
+ Once the addon is running it adds a "Start Copy Materials" button to the top of the editor.
+ Once this button is pressed it will open the Copy Surface Material Overrides window and change to 3 buttons:
  - The CMO button reopens / refocuses the Copy Material Overrides window.
  - The Grab button loads the materials associated with the currently selected mesh instance into the CMO tool.
  - The Apply button sets the currently selected mesh instances material overrides from the values in the CMO tool.
