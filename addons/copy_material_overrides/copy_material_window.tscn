@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://fimenstkrw2j"]
+
+[ext_resource type="Script" path="res://addons/copy_material_overrides/copy_material_window.gd" id="1_2d4fk"]
+[ext_resource type="PackedScene" uid="uid://d2qlq2jiw7e1s" path="res://addons/copy_material_overrides/copy_material_dialog.tscn" id="1_ucl0s"]
+
+[node name="CopyMaterialWindow" type="Window"]
+title = "Copy Surface Material Overrides"
+initial_position = 1
+size = Vector2i(1024, 820)
+min_size = Vector2i(1024, 600)
+max_size = Vector2i(1024, 32768)
+keep_title_visible = true
+content_scale_aspect = 2
+script = ExtResource("1_2d4fk")
+
+[node name="CopyMaterialDialog" parent="." instance=ExtResource("1_ucl0s")]
+unique_name_in_owner = true
+
+[connection signal="close_requested" from="." to="." method="_on_close_requested"]
+[connection signal="size_changed" from="." to="." method="_on_size_changed"]
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
